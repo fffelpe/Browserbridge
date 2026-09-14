@@ -1,0 +1,124 @@
+:root {
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color-scheme: dark;
+  background: #111318;
+  color: #f5f7fa;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-width: 340px;
+  background: #111318;
+}
+
+main { padding: 18px; }
+
+.brand {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.logo {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  background: #ff7139;
+  color: #16181d;
+  font-weight: 900;
+}
+
+h1 {
+  font-size: 17px;
+  margin: 0 0 2px;
+}
+
+header p, footer, .status-card p {
+  color: #aeb5c0;
+  margin: 0;
+  font-size: 12px;
+}
+
+.status-card {
+  margin: 18px 0 12px;
+  padding: 14px;
+  border: 1px solid #2a2f39;
+  border-radius: 14px;
+  background: #181b21;
+}
+
+.status-line {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #838b98;
+}
+
+.dot.ok { background: #35c875; }
+.dot.error { background: #ff5f57; }
+.dot.busy { background: #ffbd2e; }
+
+.stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.stats div {
+  padding: 12px;
+  border-radius: 12px;
+  background: #181b21;
+  border: 1px solid #2a2f39;
+}
+
+.stats strong {
+  display: block;
+  font-size: 22px;
+}
+
+.stats span {
+  font-size: 11px;
+  color: #aeb5c0;
+}
+
+button {
+  width: 100%;
+  border: 0;
+  border-radius: 11px;
+  padding: 11px 12px;
+  font-weight: 750;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+button:disabled {
+  opacity: .6;
+  cursor: wait;
+}
+
+.primary {
+  background: #ff7139;
+  color: #15171b;
+}
+
+.secondary {
+  background: #252a33;
+  color: #f5f7fa;
+}
+
+footer {
+  margin-top: 14px;
+  text-align: center;
+}

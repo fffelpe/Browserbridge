@@ -1,0 +1,37 @@
+{
+  "manifest_version": 3,
+  "name": "BrowserBridge",
+  "version": "0.1.0",
+  "description": "Importa automaticamente favoritos e histórico de navegadores Chromium para o Firefox.",
+  "permissions": [
+    "bookmarks",
+    "history",
+    "storage",
+    "nativeMessaging"
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "action": {
+    "default_title": "BrowserBridge",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "48": "icons/icon.svg"
+    }
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
+  "icons": {
+    "48": "icons/icon.svg"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "browserbridge@felipeleal.site",
+      "strict_min_version": "128.0"
+    }
+  }
+}

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>BrowserBridge</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main>
+    <header>
+      <div class="brand">
+        <div class="logo">BB</div>
+        <div>
+          <h1>BrowserBridge</h1>
+          <p>Chrome / Edge → Firefox</p>
+        </div>
+      </div>
+    </header>
+
+    <section class="status-card">
+      <div class="status-line">
+        <span id="status-dot" class="dot idle"></span>
+        <strong id="status-title">Pronto</strong>
+      </div>
+      <p id="status-text">Clique em sincronizar para testar o bridge.</p>
+    </section>
+
+    <section class="stats">
+      <div>
+        <strong id="bookmark-count">0</strong>
+        <span>favoritos novos</span>
+      </div>
+      <div>
+        <strong id="history-count">0</strong>
+        <span>visitas novas</span>
+      </div>
+    </section>
+
+    <button id="sync-button" class="primary">Sincronizar agora</button>
+    <button id="options-button" class="secondary">Configurações</button>
+
+    <footer>
+      <span id="last-sync">Nunca sincronizado</span>
+    </footer>
+  </main>
+
+  <script src="popup.js"></script>
+</body>
+</html>
