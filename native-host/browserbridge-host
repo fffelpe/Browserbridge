@@ -1,2 +1,5 @@
 #!/usr/bin/env sh
-exec python3 -u "$(dirname "$0")/bridge.py"
+
+SCRIPT_DIR="$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)"
+
+exec python3 -u "$SCRIPT_DIR/bridge.py"

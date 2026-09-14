@@ -1,9 +1,0 @@
-{
-    "path":  "C:\\Users\\luisleal\\Downloads\\browserbridge-mvp-v0.1.0\\browserbridge-mvp\\native-host\\browserbridge.bat",
-    "description":  "BrowserBridge Native Messaging Host",
-    "name":  "site.felipeleal.browserbridge",
-    "allowed_extensions":  [
-                               "browserbridge@felipeleal.site"
-                           ],
-    "type":  "stdio"
-}
